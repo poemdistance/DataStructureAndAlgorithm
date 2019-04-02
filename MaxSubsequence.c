@@ -46,7 +46,7 @@ int MaxSubsequence2(const int a[], int N)
     return MaxSum;
 }
 
-/*O(N), 只读取一边序列，可用于联机算法,仅需要常量空间和线性时间运行*/
+/*O(N), 只读取一遍序列，可用于联机算法,仅需要常量空间和线性时间运行*/
 int MaxSubsequence3(const int a[], int N)
 {
     int thisSum = 0;
@@ -113,6 +113,7 @@ MaxSubsum(const int a[], int left, int right)
     return  val > middle ? val : middle;
 }
 
+/*分治求解驱动函数*/
 int getMaxSubSum(const int a[], int N)
 {
     MaxSubsum(a, 0, N-1);
