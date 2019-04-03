@@ -1,3 +1,6 @@
+/*基数排序,单向链表实现*/
+/*时间复杂度:O(P(N+B)),P:排序趟数,N元素个数,B桶数*/
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
