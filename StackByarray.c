@@ -119,6 +119,15 @@ void pop( stack s )
     }
 }
 
+int top( stack s )
+{
+    if( ! isEmpty(s) )
+        return s->array[s->topOfStack];
+
+    printf("top: empty stack\n");
+    return 0;
+}
+
 int main()
 {
     stack s;
@@ -142,6 +151,9 @@ int main()
     printf("topOfStack=%d\n", s->topOfStack);
 
     pop(s);
+
+    printf("top(s) = %d \n", top(s));
+
     pop(s);
     pop(s);
 
